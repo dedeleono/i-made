@@ -1,10 +1,13 @@
 import Layout from './containers/layout/layout';
+import About from './components/About/About';
+import Contact from './components/Contact/Contact';
+import Shop from './components/Shop/Shop';
 
 function App() {
   return (
     <div>
       <Layout>
-        Contenido de pagggggg
+        <About />
       </Layout>
     </div>
   );
