@@ -1,17 +1,12 @@
-import styles from './NavItems.module.css'
+import styles from './NavItems.module.css';
+import NavItem from './NavigationItem/NavItem';
 
 const navItems = (props) => {
     return(
         <ul className={styles.NavItems}>
-            <li>
-                <a>Link 1</a>
-            </li>
-            <li>
-                <a>Link 2</a>
-            </li>
-            <li>
-                <a>Link 2</a>
-            </li>
+            <NavItem link="/">Shop</NavItem>
+            <NavItem link="/about">About</NavItem>
+            <NavItem link="/contact">Contact</NavItem>
         </ul>
     )
 }
