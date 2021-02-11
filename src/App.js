@@ -9,9 +9,9 @@ function App() {
     <>
       <Layout>
         <Switch>
-          <Route path="/about" component={About}/>
-          <Route path="/contact" component={Contact}/>
-          <Route path="/" exact component={Shop}/>
+          <Route path="/about" component={}/>
+          <Route path="/contact" component={}/>
+          <Route path="/" exact component={}/>
         </Switch>
       </Layout>
     </>

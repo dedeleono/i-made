@@ -6,12 +6,13 @@ class Layout extends Component {
     render()
     {
         return(
-            <div>
-                <Toolbar />
+            <>
+                <header></header>
                 <main className={styles.Content}>
                     {this.props.children}
                 </main>
-            </div>
+                <footer></footer>
+            </>
         )
     }
 }
