@@ -6,7 +6,7 @@ import { Route, Switch } from 'react-router-dom';
 
 function App() {
   return (
-    <div>
+    <>
       <Layout>
         <Switch>
           <Route path="/about" component={About}/>
@@ -14,7 +14,7 @@ function App() {
           <Route path="/" exact component={Shop}/>
         </Switch>
       </Layout>
-    </div>
+    </>
   );
 }
 
