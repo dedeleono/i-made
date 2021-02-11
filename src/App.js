@@ -1,3 +1,4 @@
+import './index.css';
 import Layout from './containers/layout/Layout';
 import About from './components/About/About';
 import Contact from './components/Contact/Contact';
@@ -9,9 +10,9 @@ function App() {
     <>
       <Layout>
         <Switch>
-          <Route path="/about" component={}/>
-          <Route path="/contact" component={}/>
-          <Route path="/" exact component={}/>
+          <Route path="/about" component={About}/>
+          <Route path="/contact" component={Contact}/>
+          <Route path="/" exact component={Shop}/>
         </Switch>
       </Layout>
     </>

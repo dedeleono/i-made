@@ -8,7 +8,7 @@
     "@testing-library/react": "^11.2.3",
     "@testing-library/user-event": "^12.6.2",
     "autoprefixer": "^9.8.6",
-    "postcss": "^7.0.35",
+    "postcss": "^8.2.6",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
     "react-router-dom": "^5.2.0",
@@ -20,7 +20,11 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "tailwind:build": "NODE_ENV=production postcss src/index.css -o src/index.output.css",
+    "tailwind:dev": "postcss src/index.css -o src/index.output.css",
+    "prestart": "npm run tailwind:dev",
+    "prebuild": "npm run tailwind:build"
   },
   "eslintConfig": {
     "extends": [
@@ -39,5 +43,9 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "@fullhuman/postcss-purgecss": "^4.0.0",
+    "postcss-cli": "^8.3.1"
   }
 }
