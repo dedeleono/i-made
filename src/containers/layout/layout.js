@@ -6,7 +6,8 @@ class Layout extends Component {
     {
         return(
             <>
-                <header></header>
+                <header>
+                </header>
                 <main className={styles.Content}>
                     {this.props.children}
                 </main>
